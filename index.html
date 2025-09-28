@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Semiología – Alteraciones Psíquicas</title>
+  <meta name="description" content="Sitio educativo con 14 páginas sobre alteraciones de conciencia, sueño, orientación, memoria, percepción, pensamiento, lenguaje, afectividad, conducta motora, inteligencia y juicio." />
+  <link rel="preload" href="data.json" as="fetch" type="application/json" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header" role="banner">
+    <button class="nav-toggle" aria-label="Abrir/cerrar menú" aria-expanded="false">☰</button>
+    <h1 class="site-title">Semiología – Alteraciones Psíquicas</h1>
+    <div class="search-wrap">
+      <label for="q" class="visually-hidden">Buscar término</label>
+      <input id="q" type="search" placeholder="Buscar término, categoría o ejemplo…" autocomplete="off" />
+    </div>
+  </header>
+
+  <div class="app-shell">
+    <!-- Navegación lateral -->
+    <nav class="sidebar" aria-label="Secciones del sitio">
+      <ul class="nav-list">
+        <li><a class="nav-link" data-route="inicio" href="#/inicio">Inicio</a></li>
+        <li><a class="nav-link" data-route="alteraciones-de-conciencia" href="#/alteraciones-de-conciencia">1. Alteraciones de Conciencia</a></li>
+        <li><a class="nav-link" data-route="alteraciones-del-sueno" href="#/alteraciones-del-sueno">2. Alteraciones del Sueño</a></li>
+        <li><a class="nav-link" data-route="alteraciones-de-orientacion" href="#/alteraciones-de-orientacion">3. Alteraciones de Orientación</a></li>
+        <li><a class="nav-link" data-route="alteraciones-de-memoria" href="#/alteraciones-de-memoria">4. Alteraciones de Memoria</a></li>
+        <li><a class="nav-link" data-route="alteraciones-de-la-sensopercepcion" href="#/alteraciones-de-la-sensopercepcion">5. Alteraciones de la Sensopercepción</a></li>
+        <li><a class="nav-link" data-route="alteraciones-del-curso-del-pensamiento" href="#/alteraciones-del-curso-del-pensamiento">6. Curso del Pensamiento</a></li>
+        <li><a class="nav-link" data-route="alteraciones-del-contenido-del-pensamiento" href="#/alteraciones-del-contenido-del-pensamiento">7. Contenido del Pensamiento</a></li>
+        <li><a class="nav-link" data-route="alteraciones-del-lenguaje-oral" href="#/alteraciones-del-lenguaje-oral">8. Lenguaje Oral</a></li>
+        <li><a class="nav-link" data-route="alteraciones-del-lenguaje-escrito" href="#/alteraciones-del-lenguaje-escrito">9. Lenguaje Escrito</a></li>
+        <li><a class="nav-link" data-route="alteraciones-del-lenguaje-mimico" href="#/alteraciones-del-lenguaje-mimico">10. Lenguaje Mímico</a></li>
+        <li><a class="nav-link" data-route="alteraciones-de-la-afectividad" href="#/alteraciones-de-la-afectividad">11. Afectividad</a></li>
+        <li><a class="nav-link" data-route="alteraciones-de-la-conducta-motora" href="#/alteraciones-de-la-conducta-motora">12. Conducta Motora</a></li>
+        <li><a class="nav-link" data-route="alteraciones-en-la-inteligencia" href="#/alteraciones-en-la-inteligencia">13. Inteligencia</a></li>
+        <li><a class="nav-link" data-route="alteraciones-del-juicio-y-raciocinio" href="#/alteraciones-del-juicio-y-raciocinio">14. Juicio y Raciocinio</a></li>
+      </ul>
+      <div class="meta">
+        <button id="btn-imprimir" class="btn-ghost" type="button" title="Imprimir / guardar PDF">Imprimir</button>
+        <button id="btn-contraste" class="btn-ghost" type="button" title="Cambiar contraste">Contraste</button>
+      </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main id="app" class="content" role="main" tabindex="-1">
+      <!-- Vista Inicio -->
+      <section id="view-inicio" class="view active" data-view="inicio" aria-labelledby="inicio-title">
+        <h2 id="inicio-title">Bienvenida</h2>
+        <p>Este sitio reúne, en 14 páginas temáticas, conceptos de semiología psiquiátrica organizados en tarjetas breves y claros ejemplos diagnósticos. Usa el menú lateral para navegar, o el buscador superior para encontrar términos específicos.</p>
+        <ul class="features">
+          <li>✅ 14 páginas temáticas + Inicio</li>
+          <li>✅ Búsqueda instantánea por término, categoría y ejemplos</li>
+          <li>✅ Filtros por categoría dentro de cada página</li>
+          <li>✅ Modo de alto contraste e impresión</li>
+        </ul>
+        <div class="cta-cards">
+          <a class="cta" href="#/alteraciones-de-conciencia">Explorar Conciencia</a>
+          <a class="cta" href="#/alteraciones-del-sueno">Explorar Sueño</a>
+          <a class="cta" href="#/alteraciones-de-orientacion">Explorar Orientación</a>
+        </div>
+      </section>
+
+      <!-- Vista Listado genérica (todas las páginas usan el mismo template) -->
+      <section id="view-listado" class="view" data-view="listado" hidden>
+        <header class="section-head">
+          <h2 id="section-title">Sección</h2>
+          <div class="filters">
+            <label class="filter-label">
+              <span>Categoría:</span>
+              <select id="filter-categoria" aria-label="Filtrar por categoría">
+                <option value="">Todas</option>
+              </select>
+            </label>
+            <button id="btn-limpiar" class="btn-ghost" type="button">Limpiar filtros</button>
+          </div>
+        </header>
+
+        <div id="results" class="cards" role="list" aria-live="polite" aria-busy="false"></div>
+
+        <template id="card-tpl">
+          <article class="card" role="listitem">
+            <h3 class="term"></h3>
+            <div class="badge-row">
+              <span class="badge badge-cat"></span>
+              <span class="badge badge-id"></span>
+            </div>
+            <p class="def-corta"></p>
+            <details class="details">
+              <summary>Definición larga</summary>
+              <p class="def-larga"></p>
+            </details>
+            <div class="grid-two">
+              <div>
+                <h4>Características</h4>
+                <ul class="list caracts"></ul>
+              </div>
+              <div>
+                <h4>Ejemplos Dx</h4>
+                <ul class="list ejemplos"></ul>
+              </div>
+            </div>
+            <div class="subtipos-wrap" hidden>
+              <h4>Subtipos</h4>
+              <ul class="list subtipos"></ul>
+            </div>
+          </article>
+        </template>
+
+        <footer class="section-foot">
+          <button id="btn-arriba" class="btn-ghost" type="button" title="Ir arriba">↑ Arriba</button>
+        </footer>
+      </section>
+
+      <!-- Vista resultados de búsqueda -->
+      <section id="view-search" class="view" data-view="search" hidden aria-labelledby="search-title">
+        <h2 id="search-title">Resultados de búsqueda</h2>
+        <p id="search-summary">Mostrando resultados para: <strong id="q-term"></strong></p>
+        <div id="search-results" class="cards" role="list" aria-live="polite" aria-busy="false"></div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="app-footer" role="contentinfo">
+    <small>© <span id="year"></span> Contenidos educativos. Sin logos ni marcas.</small>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
