@@ -1,0 +1,72 @@
+{
+  "alteraciones-de-conciencia": [
+    {
+      "id": "obnubilacion",
+      "categoria": "Conciencia",
+      "def_corta": "Enturbiamiento leve de la lucidez.",
+      "def_larga": "Estado con disminución de la claridad de conciencia.",
+      "caracteristicas": [
+        "Atención disminuida"
+      ],
+      "ejemplos": [
+        "Encefalopatías"
+      ]
+    }
+  ],
+  "alteraciones-del-sueno": [
+    {
+      "id": "insomnio",
+      "categoria": "Tr. Sueño",
+      "def_corta": "Dificultad para conciliar o mantener el sueño.",
+      "def_larga": "Incapacidad de iniciar o mantener el sueño.",
+      "caracteristicas": [
+        "Problemas para quedarse dormido"
+      ],
+      "ejemplos": [
+        "Depresión"
+      ]
+    }
+  ],
+  "alteraciones-de-orientacion": [
+    {
+      "id": "distractibilidad",
+      "categoria": "Atención",
+      "def_corta": "Incapacidad para mantener la atención.",
+      "def_larga": "El sujeto no logra mantener la concentración.",
+      "caracteristicas": [
+        "Cambio frecuente de foco"
+      ],
+      "ejemplos": [
+        "TDAH"
+      ]
+    }
+  ],
+  "alteraciones-de-memoria": [
+    {
+      "id": "hipermnesia",
+      "categoria": "Memoria",
+      "def_corta": "Exageración de la memoria.",
+      "def_larga": "Capacidad aumentada para recordar.",
+      "caracteristicas": [
+        "Recuerdos muy detallados"
+      ],
+      "ejemplos": [
+        "Estados maníacos"
+      ]
+    }
+  ],
+  "alteraciones-de-la-sensopercepcion": [
+    {
+      "id": "hiperpercepcion",
+      "categoria": "Sensopercepcion",
+      "def_corta": "Intensificación anormal de las percepciones.",
+      "def_larga": "Estímulos experimentados con mayor intensidad.",
+      "caracteristicas": [
+        "Mayor sensibilidad a sonidos"
+      ],
+      "ejemplos": [
+        "Ansiedad"
+      ]
+    }
+  ]
+}

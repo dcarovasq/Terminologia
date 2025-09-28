@@ -1,0 +1,58 @@
+{
+  "alteraciones-de-la-afectividad": [
+    {
+      "id": "euforia",
+      "categoria": "Afectividad",
+      "def_corta": "Estado de ánimo alegre.",
+      "def_larga": "Elevación del tono afectivo caracterizada por bienestar.",
+      "caracteristicas": [
+        "Alegría generalizada"
+      ],
+      "ejemplos": [
+        "Trastorno bipolar"
+      ]
+    }
+  ],
+  "alteraciones-de-la-conducta-motora": [
+    {
+      "id": "impulsos",
+      "categoria": "Conducta motora",
+      "def_corta": "Actos súbitos sin reflexión.",
+      "def_larga": "Conductas motoras repentinas sin considerar consecuencias.",
+      "caracteristicas": [
+        "Inicio brusco"
+      ],
+      "ejemplos": [
+        "Epilepsia"
+      ]
+    }
+  ],
+  "alteraciones-en-la-inteligencia": [
+    {
+      "id": "retardo-mental",
+      "categoria": "Inteligencia",
+      "def_corta": "Funcionamiento intelectual inferior.",
+      "def_larga": "Limitaciones en funcionamiento intelectual (CI < 70).",
+      "caracteristicas": [
+        "Dificultad de aprendizaje"
+      ],
+      "ejemplos": [
+        "Síndrome de Down"
+      ]
+    }
+  ],
+  "alteraciones-del-juicio-y-raciocinio": [
+    {
+      "id": "juicio-debilitado",
+      "categoria": "Juicio y raciocinio",
+      "def_corta": "Capacidad crítica disminuida.",
+      "def_larga": "Disminución de la capacidad de valorar adecuadamente la realidad.",
+      "caracteristicas": [
+        "Escasa crítica"
+      ],
+      "ejemplos": [
+        "Trastornos de personalidad"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "alteraciones-del-curso-del-pensamiento": [
+    {
+      "id": "pensamiento-animista",
+      "categoria": "Pensamiento – Forma",
+      "def_corta": "Atribuir vida a objetos.",
+      "def_larga": "El sujeto concede características vitales a objetos.",
+      "caracteristicas": [
+        "Explicaciones mágicas"
+      ],
+      "ejemplos": [
+        "Esquizofrenia"
+      ]
+    }
+  ],
+  "alteraciones-del-contenido-del-pensamiento": [
+    {
+      "id": "ideas-obsesivas",
+      "categoria": "Pensamiento – Contenido",
+      "def_corta": "Pensamientos intrusivos.",
+      "def_larga": "Representaciones que irrumpen en la conciencia repetidamente.",
+      "caracteristicas": [
+        "Carácter egodistónico"
+      ],
+      "ejemplos": [
+        "TOC"
+      ]
+    }
+  ],
+  "alteraciones-del-lenguaje-oral": [
+    {
+      "id": "disartria",
+      "categoria": "Lenguaje – Oral",
+      "def_corta": "Alteración de la articulación.",
+      "def_larga": "Dificultad para articular sonidos.",
+      "caracteristicas": [
+        "Habla lenta"
+      ],
+      "ejemplos": [
+        "Lesiones cerebelosas"
+      ]
+    }
+  ],
+  "alteraciones-del-lenguaje-escrito": [
+    {
+      "id": "agrafia",
+      "categoria": "Lenguaje – Escrito",
+      "def_corta": "Pérdida adquirida de la escritura.",
+      "def_larga": "El paciente pierde la capacidad de expresarse por escrito.",
+      "caracteristicas": [
+        "Escritura imposible"
+      ],
+      "ejemplos": [
+        "Lesiones parietales"
+      ]
+    }
+  ],
+  "alteraciones-del-lenguaje-mimico": [
+    {
+      "id": "hipermimia",
+      "categoria": "Lenguaje – Mímico",
+      "def_corta": "Exageración de la expresión facial.",
+      "def_larga": "Intensificación patológica de gesticulación.",
+      "caracteristicas": [
+        "Exceso de gestos"
+      ],
+      "ejemplos": [
+        "Manía"
+      ]
+    }
+  ]
+}
